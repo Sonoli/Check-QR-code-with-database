@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:text="Проверить"
+        android:backgroundTint="#1475C3"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:textColor="#fff"
+        android:backgroundTint="#1475C3"
+        android:layout_height="66dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style2"
+
+        android:gravity="center"
+        android:text="Занести"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/scanBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scanBtn"
+        app:layout_constraintTop_toBottomOf="@+id/scanBtn" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="374dp"
+        android:layout_height="212dp"
+        android:backgroundTint="#A28ADA"
+        android:background="#DCFFFFFF"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
